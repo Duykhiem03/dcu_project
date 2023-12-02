@@ -1,2 +1,2 @@
 # DCU-Project
-Collection of projects in university
+This is my collection of project I did in university
