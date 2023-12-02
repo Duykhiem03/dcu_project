@@ -1,0 +1,245 @@
+
+/* Main layout of aboage */
+html, body {
+    margin: 0;
+}
+
+.container-content, .container {
+    margin: 0 auto;
+    width: 960px;
+}
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.row, .row-alt, .row-head {
+    min-width: 3660px;
+    padding: 30px 67px 67px 0;
+}
+
+.image-gallery {
+    margin-top: -40px;
+}
+
+.col-1-3, .col-2-3 {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+.col-1-3 {
+    width: 30%;
+}
+  
+.col-2-3 {
+    width: 60%;
+}
+    
+.container-content, .col-1-3, .col-2-3 {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+
+/* background colours for sections */
+.row-head {
+    background-color: #d1e8ff;
+}
+
+.row {
+    background-color: #fff;
+}
+
+.row-alt {
+    background-color: #f5fcff;
+}
+
+/* Font */
+.main-style {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* element styling (e.g. standard p, h1, h2, a, etc) */
+h2, h3, h5 {
+    text-align: center;
+}
+
+h2 {
+    color: #5784e6;
+}
+
+
+
+/* navigation styles */
+a {
+    text-decoration: none;
+}
+
+nav {
+    text-align: right;
+}
+
+.page-nav li {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+}
+
+.page-nav {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+
+.page-nav a {
+    color: #000000;
+}
+
+
+
+.page-nav a:hover {
+    color: #5E3BEE;
+}
+
+/* page header styles*/
+.header-content {
+    float: left;
+    text-align: left;
+}
+.header-content h1 {
+    font-weight: 400;
+    padding: 10px;
+    margin-right: 70px;
+    margin-left: 50px;
+    background-color: #5784e6;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+.header-content p {
+    padding-top: 7px;
+    line-height: 44px;
+    color: #000;
+    font-size: 17px;
+    margin-top: -23px;
+
+}
+
+/* About me section */
+#about {
+    clear: both;
+}
+
+
+.my-info {
+    border-radius: 5px;
+    margin-top: 50px;
+    padding-bottom: 22px;
+    text-align: center;
+    background-color: #d1e8ff;
+  }
+  
+.my-info img {
+    border-radius: 50%;
+    height: 130px;
+    margin: -66px 0 22px 0;
+    vertical-align: top;
+}
+
+.my-info li {
+    list-style-type: none;
+    padding-right: 50px;
+}
+.my-info li:last-child {
+    padding-top: 10px;
+}
+
+/*Images*/
+.an-image img {
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 22px;
+    max-width: 100%;
+}
+
+/*Contact me*/
+.contact {
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: left;
+}
+.contact input {
+    border-radius: 5px;
+    color: #888;
+    display: block;
+    margin: 5px 0 10px 0;
+}
+
+.contact input, .contact textarea, .button:hover {
+    border: .5px solid #5e3bee;
+}
+
+.contact input {
+    width: 80%;
+    height: 30px;
+}
+
+.contact textarea {
+    width: 100%;
+    height: 60px;
+}
+
+.contact p:nth-child(1) {
+    float: left;
+    width: 50%;
+}
+
+.contact p:nth-child(2) {
+    clear: both;
+    float: left;
+    width: 50%;
+}
+
+.contact p:nth-child(3) {
+    float: right;
+    width: 50%;
+}
+
+.contact p:last-child {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+/* Button styling */
+.button {
+    clear: both;
+    border-radius: 5px;
+    width: 0;
+    margin: 20px 400px;
+    padding: 11px 76px 11px 30px;
+    cursor: pointer;
+    background: #5e3bee;
+    color: #fff;
+    letter-spacing: .5px;
+    font-size: 15px;
+    border-width: .5px;
+}
+
+.button:hover {
+    color: #5e3bee;
+    background: #fff;
+}
+
+
+/* footer styling */
+#footer-layout {
+    clear: both;
+    text-align: left;
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
+

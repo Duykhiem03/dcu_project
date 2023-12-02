@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Add your meta description" />
+    <!-- meta tag below is used for Internet Explorer and mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
+    <title>My Portfolio</title>
+    <!-- add your stylesheet and any other styling code, e.g. google fonts  a good link is https://fonts.google.com/-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        
+	<link rel="stylesheet" href="css/layout.css" /> 
+</head>
+
+<body>
+
+    <main class= "main-style">
+        <section class="row-head">
+            <header class="container">  <!-- What does the header do? The header contains the main title for the page and the site logo.-->
+                    <div class="header-content">  <!-- What is a div?  div tags are used to divide up this HTML file into specific region-->
+                        <h1>Duy Khiem</h1>
+                        <p>An Undergraduate with a passion for Computing</p>
+                    </div>
+                </header>
+                <nav class="page-nav container"> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#work">Work Experience</a></li>
+                        <li><a href="#images">Image Gallery</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>
+        </section>  
+       
+    <!--Note here the use of an ID.  the link above actually links to this.  It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
+        <section id="about" class="row-alt">  <!--What does the section do here?  The section here defines about me section in a page -->
+            <div class="container-content">
+                <h2>About Me</h2>
+                <div class="col-2-3">
+                    <p>
+                        My name is Duy Khiem Pham, and I have a great passion for computing, especially programming. I started learning programming languages back in 2017, and since then, I have been continuously improving my knowledge by studying at the university and self-learning through the internet. 
+                        Some programming languages that I have mastered are C/C++ and Python. Additionally, I am always up for new challenges and keep myself updated with the latest news related to new technology worldwide.
+                    </p>
+                    <p>
+                        I am an eager learner and always strive to complete tasks to the best of my abilities. I also enjoy working in a team environment, as it helps me leverage the collective wisdom and expertise of team members for mutual growth. 
+                        As for my education, I hold a bachelor's degree in Computer Science with high grades.
+                    </p>
+                </div><!--
+
+                --><aside class="col-1-3">
+                    <div class="my-info">
+                        <img src="images/portrait.jpg" alt="Duy Khiem">
+                        <ul>
+                            <li><a href="https://www.instagram.com/">@pd.khiem03</a></li>
+                            <li><a href="https://github.com/Duykhiem03">GitHub/Duykhiem03</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section id="work" class="row">
+            <div class="container-content">
+                <h2>Work Experience</h2>
+                    <div class="col-1-3">
+                        <h3>Full-stack Developer</h3>
+                        <h5>2019 - present</h5>
+                        <ul>
+                            <li>Design user interfaces, write server-side code, manage databases, and create APIs, making them capable of handling all aspects of web application development.</li>
+                            <li>Be responsible for the complete development lifecycle, including security, performance optimization, server configuration, and deployment, ensuring a holistic approach to web development.</li>
+                        </ul>
+                    </div><!--
+
+                    --><div class="col-1-3">
+                        <h3>Front-end Developer</h3>
+                        <h5>2016 - 2019</h5>
+                        <ul>
+                            <li>Collaborate with designers and back-end developers, test and debug code, and stay updated on evolving web technologies.</li>
+                            <li>Create the user interface, implement responsive design, and add interactivity by using HTML, CSS, and JavaScript.</li>
+                            <li>Ensure that web pages work consistently across different web browsers.</li>
+                        </ul>
+                    </div><!--
+
+                    --><div class="col-1-3">
+                        <h3>Backend Developer</h3>
+                        <h5>2010 - 2016</h5>
+                        <ul>
+                            <li>Manage data, create databases, develop APIs, and ensure server security.</li>
+                            <li>Optimize performance, configure and maintain servers, and ensure scalability.</li>
+                            <li>Collaborate with front-end developers and integrate with third-party services to ensure that the entire web application functions seamlessly.</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+				<br><br>
+
+        <section id="images" class="image-gallery row-alt">
+		
+            <div class="container-content">
+                <h2>Image Gallery</h2>
+                    <div class="col-1-3">
+                        <figure class="an-image">
+                            <img src="images/family.jpg" alt="family">
+                            <figcaption class="image-caption">Family is love, support and a place where most people want to return after the difficulties and challenges of society. It is the most peaceful place in the world.</figcaption>
+                        </figure> 
+                    </div>
+
+                    <div class="col-1-3">
+                        <figure class="an-image">
+                            <img src="images/friend.jpg" alt="friend">
+                            <figcaption class="image-caption">Friends: lifelong laughter, support, and unforgettable moments.</figcaption>
+                        </figure> 
+                    </div>
+
+                    <div class="col-1-3">   
+                        <figure class="an-image">
+                            <img src="images/computer.jpg" alt="computer">
+                            <figcaption class="image-caption"> Computers, or coding are my hobbies. I'm immersed in it, and it makes me forget the existence of time.</figcaption>
+                        </figure> 
+                    </div>
+            </div>
+        </section>
+        <section id="contact" class="row">
+            <div class="container-content container">
+                <h2>Contact Me</h2>
+                    <form action="https://formspree.io/duy.pham2@mail.dcu.ie" method="post">
+                        <div class="contact">
+                            <p>
+                                <label for="contact-name">Your Name</label>
+                                <input id="contact-name" type="text" placeholder="Full name" name="contact-name" />
+                            </p>
+                            <p>
+                                <label for="contact-email">Your email address</label>
+                                <input id="contact-email" type="email" placeholder="Email address" name="contact-email" /> 
+                            </p>
+                            <p>
+                                <label for="contact-phone">Your phone number</label>
+                                <input id="contact-phone" type="tel" placeholder="Phone number" name="contact-phone" /> 
+                            </p>
+                            <p>
+                                <label for="contact-message">Your message</label>
+                                <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
+                            </p>
+                        </div>
+                        <div>
+                            <input class="button button-default" type="submit" value="Submit" /> 
+                        </div>
+                    </form>
+            </div>
+        </section>
+        <footer id = "footer-layout" class="row-head">
+            <div class="container">
+              <p> &copy; <a href="dcu.ie/">DCU 2023-2024</a>
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Duy Khiem Pham</span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-text">This is student coursework</span> 
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Lecturer: <a href="http://www.computing.dcu.ie/~jkernan"> Jane Kernan</a></span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br/></span> 
+			</p>
+            </div>
+        <!-- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
+         
+        </footer>
+    </main>
+</body>
+
+</html>
