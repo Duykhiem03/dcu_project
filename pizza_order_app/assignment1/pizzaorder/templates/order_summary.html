@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Order Summary
+{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-content-center">
+    <div class="card" style="width: 25rem;">
+        <div class="card-body">
+            <h3 class="card-title">Order Summary</h3>
+            <div class="d-flex justify-content-between mb-2">
+                <span class="text-gray">Date</span>
+                <span class="text-gray">{{ order_detail.date_created }}</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+                <span class="text-gray">Name</span>
+                <span class="text-gray">{{ order_detail.customer_name }}</span>
+            </div>
+            <div class="d-flex justify-content-between mb-4">
+                <span class="text-gray">Address</span>
+                <span class="text-gray">{{ order_detail.address }}</span>
+            </div>
+            <h5 class="mb-2">Your Pizza</h5>
+            <div class="d-flex justify-content-between mb-2">
+                <span class="text-gray">Size</span>
+                <span class="text-gray">{{ order_detail.size|capfirst }}</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+                <span class="text-gray">Crust type</span>
+                <span class="text-gray">{{ order_detail.crust_type|capfirst }}</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+                <span class="text-gray">Sauce</span>
+                <span class="text-gray">{{ order_detail.sauce }}</span>
+            </div>
+            <div class="d-flex justify-content-between mb-4">
+                <span class="text-gray">Cheese</span>
+                <span class="text-gray">{{ order_detail.cheese }}</span>
+            </div>
+            <div class="d-flex justify-content-between mb-4">
+                <span class="text-gray">Toppings</span>
+                {% if toppings %}
+                    <span class="col-6 text-gray text-right">{{ toppings }}</span>
+                {% else %}
+                    <span class="text-gray">No toppings</span>
+                {% endif %}
+            </div>
+        </div>
+        <!-- <button class="btn btn-confirm"><a href="{% url 'history' %}">Return to Order History</a></button> -->
+        <a href="{% url 'history' %}"><button class="btn btn-confirm", style="width: 100%;">Return to Order History</button></a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+body {
+    background-color: #EDEDED;
+}
+
+h1 {
+    color: #F2994A;
+}
+
+nav {
+    background-color: #0F0F0F;
+}
+
+nav a {
+    color: #FAFAFA;
+}
+
+.navbar-brand:hover {
+    color: #FAFAFA;
+}
+
+.navbar-nav a:hover {
+    color: #F2994A;
+    font-weight: bold;
+}
+
+.dropdown-item:active {
+    background-color: #EDEDED;
+}
+
+
+.btn {
+    background-color: #F2994A;
+    color: #FAFAFA;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #FF7F09;
+}

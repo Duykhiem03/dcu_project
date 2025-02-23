@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Order History
+{% endblock %}
+
+{% block content %}
+    <!-- {% if user.is_authenticated %}
+        <p>{{ user_id }}</p>
+    {% endif %} -->
+
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
+
+{% endif %}
+
+
+<h1>Welcome, {{ first_name }}</h1>
+<div class="row my-3">
+    <span class="col-6 text-left">
+        <h4>Order history</h4>
+    </span>
+    <span class="col-6 text-right">
+        <a class="nav-link" href="{% url 'order' %}"><button class="btn btn-confirm">New Order</button></a>
+    </span>
+</div>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Order no.</th>
+            <th scope="col">Order date</th>
+            <th scope="col">Ship to</th>
+            <th scope="col">Customer</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if order_history %}
+            {% for order in order_history %}
+                <tr>
+                    <th scope="row">{{ order.id }}</th>
+                    <td>{{ order.date_created }}</td>
+                    <td>{{ order.address }}</td>
+                    <td>{{ order.customer_name }}</td>
+                    {% if order.customer_name %}
+                        <td><a href="{% url 'summary' order_id=order.id %}">View details</a></td>
+                    {% else %}
+                        <td><a href="{% url 'checkout' order_id=order.id %}">Make payment</a></td>
+                    {% endif %}
+                </tr>
+            {% endfor %}
+        {% endif %}
+    </tbody>
+</table>
+{% endblock %}
